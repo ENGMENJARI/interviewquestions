@@ -19,6 +19,26 @@ function swap(x,y){// suppose that x=10  and y=90
 	console.log('x now is '+ x + '  and y now is '+ y);
 }
 
+// how to test if a number is prime
+function isPrime(n){
+	var status;
+	if(n<=1){
+		status=false;
+	}else if(n===2 || n===3){
+		status=true;
+	}else if(n%2===0){
+		status=false;
+	}else{
+		for (var i = 2; i <findSquare(n); i++) {
+			if(n%i===0){
+				status=false
+			}else{
+				status=true;
+			}
+		}
+	}
+	return status;
+}
 
 
 
