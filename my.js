@@ -40,6 +40,20 @@ function isPrime(n){
 	return status;
 }
 
+// write method take two arrays and return a new array
+// with just the common items founded in the two arrays
 
+function justCommon(a1,a2){
+	var res=[];
+	for (var i = 0; i < a1.length; i++) {
+		for (var j = 0; j < a2.length; j++) {
+			if(a1.indexOf(a2[j])> -1){
+				res.push(a2[j])
+				a2.splice(j,1)
+			}
+		}
+	}
+	return res;
+}
 
 
